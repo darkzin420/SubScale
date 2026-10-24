@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Empire | O Poder da Automação no Nicho Hot</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hot: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            500: '#ec4899',
+                            650: '#be185d',
+                            700: '#9d174d',
+                            900: '#831843',
+                            950: '#500724',
+                        },
+                        darkBg: '#09050d'
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 15px rgba(236, 72, 153, 0.4)' },
+                            '100%': { boxShadow: '0 0 35px rgba(236, 72, 153, 0.8)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #09050d;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(236, 72, 153, 0.6);
+        }
+        .glass-panel {
+            background: rgba(18, 10, 25, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(236, 72, 153, 0.15);
+        }
+        .glass-panel:hover {
+            border-color: rgba(236, 72, 153, 0.4);
+        }
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(236, 72, 153, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(236, 72, 153, 0.03) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-darkBg bg-grid min-h-screen relative selection:bg-hot-500 selection:text-white">
+
+    <!-- Top Banner Alerta -->
+    <div class="bg-gradient-to-r from-hot-900 via-hot-650 to-hot-900 text-white text-xs md:text-sm font-semibold py-2 px-4 text-center tracking-wide shadow-lg">
+        🔥 <span class="underline">ATENÇÃO</span>: O mercado de Modelos Virtuais de IA faturou mais de R$ 45 Milhões no último trimestre. Vagas limitadas para o método fechado.
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 glass-panel border-b border-hot-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-hot-650 to-hot-500 flex items-center justify-center shadow-lg shadow-hot-500/30">
+                    <i class="fa-solid fa-fire text-white text-lg"></i>
+                </div>
+                <span class="text-2xl font-extrabold tracking-tight text-white">AI <span class="text-hot-500">EMPIRE</span></span>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+                <a href="#beneficios" class="hover:text-hot-500 transition">O Método</a>
+                <a href="#lucro" class="hover:text-hot-500 transition">Potencial de Ganhos</a>
+                <a href="#depoimentos" class="hover:text-hot-500 transition">Resultados</a>
+                <a href="#faq" class="hover:text-hot-500 transition">Dúvidas</a>
+            </nav>
+
+            <div>
+                <a href="#oferta" class="bg-gradient-to-r from-hot-650 to-hot-500 hover:from-hot-700 hover:to-hot-650 text-white font-bold px-6 py-3 rounded-xl shadow-lg shadow-hot-500/25 transition transform hover:-translate-y-0.5 text-sm">
+                    QUERO COMEÇAR AGORA
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-32 overflow-hidden">
+        <!-- Glows de Fundo -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-hot-650/20 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Coluna Texto -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-hot-950/80 border border-hot-500/30 text-hot-400 text-xs font-semibold mb-6">
+                        <i class="fa-solid fa-bolt text-hot-500"></i>
+                        <span>Aprenda a criar e monetizar modelos de IA 24h por dia</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                        Crie Milionárias Virtuais e Lucre em Dólar no <span class="text-transparent bg-clip-text bg-gradient-to-r from-hot-500 to-pink-400 glow-text">Nicho Hot com IA</span>
+                    </h1>
+                    
+                    <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Descubra o sistema completo passo a passo para gerar identidades hiper-realistas, dominar o tráfego orgânico e transformar cliques em faturamento recorrente em plataformas de assinatura (OnlyFans, Privacy e Fanvue).
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+                        <a href="#oferta" class="w-full sm:w-auto bg-gradient-to-r from-hot-650 to-hot-500 hover:from-hot-700 hover:to-hot-650 text-white font-extrabold text-center px-8 py-4 rounded-xl shadow-xl shadow-hot-500/40 transition transform hover:scale-105 text-base">
+                            GARANTIR MINHA VAGA AGORA <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#beneficios" class="w-full sm:w-auto glass-panel text-gray-200 hover:text-white font-semibold text-center px-6 py-4 rounded-xl transition text-base">
+                            Ver Como Funciona
+                        </a>
+                    </div>
+
+                    <!-- Prova Social Rápida -->
+                    <div class="flex items-center justify-center lg:justify-start space-x-6 text-sm text-gray-400 border-t border-gray-800 pt-6">
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-shield-check text-hot-500"></i>
+                            <span>Método 100% Validado</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-users text-hot-500"></i>
+                            <span>+2.400 Alunos Ativos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna Card Visual / Mockup Holográfico -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-hot-650 to-pink-500 rounded-3xl blur-xl opacity-30 animate-pulse-slow"></div>
+                        
+                        <div class="glass-panel p-6 rounded-3xl relative border border-hot-500/30 shadow-2xl">
+                            <!-- Header do Card -->
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-12 h-12 rounded-full bg-cover bg-center border-2 border-hot-500 shadow-md" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80')"></div>
+                                    <div>
+                                        <h4 class="font-bold text-white text-sm">Luna Vance <span class="text-xs bg-hot-900/60 text-hot-300 px-1.5 py-0.5 rounded ml-1">IA Model</span></h4>
+                                        <p class="text-xs text-gray-400">@luna_ai_official</p>
+                                    </div>
+                                </div>
+                                <span class="bg-emerald-500/20 text-emerald-400 text-xs font-bold px-2.5 py-1 rounded-full flex items-center space-x-1">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                                    <span>Online (Auto)</span>
+                                </span>
+                            </div>
+
+                            <!-- Gráfico de Faturamento Fictício / Estatísticas -->
+                            <div class="bg-darkBg/80 p-4 rounded-2xl border border-hot-500/20 mb-6">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-xs text-gray-400">Faturamento Mensal (Estimado)</span>
+                                    <span class="text-xs text-emerald-400 font-bold">+342% este mês</span>
+                                </div>
+                                <div class="text-3xl font-extrabold text-white glow-text mb-4">$ 8,450.00 <span class="text-xs font-normal text-gray-400">USD</span></div>
+                                
+                                <!-- Barras de progresso simuladas -->
+                                <div class="space-y-2">
+                                    <div>
+                                        <div class="flex justify-between text-xs text-gray-300 mb-1">
+                                            <span>OnlyFans / Privacy (Assinaturas)</span>
+                                            <span class="text-hot-400 font-bold">70%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                                            <div class="bg-gradient-to-r from-hot-650 to-hot-500 h-full rounded-full" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between text-xs text-gray-300 mb-1">
+                                            <span>Pay-Per-View & Chat PPV</span>
+                                            <span class="text-hot-400 font-bold">30%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                                            <div class="bg-gradient-to-r from-hot-650 to-pink-400 h-full rounded-full" style="width: 30%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Rodapé do Card -->
+                            <div class="flex items-center justify-between text-xs text-gray-400 bg-hot-950/30 p-3 rounded-xl border border-hot-500/10">
+                                <span>⚡ Geração automática 24/7</span>
+                                <span class="text-hot-400 font-bold">Zero Aparição Pessoal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Benefícios / Pilares -->
+    <section id="beneficios" class="py-24 relative bg-darkBg/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+                    Os 4 Pilares para Dominar o <span class="text-hot-500">Nicho Hot com IA</span>
+                </h2>
+                <p class="text-gray-400">
+                    Esqueça métodos complexos ou que exigem exposição. Nossa estrutura cobre desde a criação da personagem até a conversão em dólar.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Pilar 1 -->
+                <div class="glass-panel p-8 rounded-3xl relative transition hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-hot-650/20 border border-hot-500/40 flex items-center justify-center text-hot-400 text-2xl mb-6 shadow-inner">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">1. Identidade & Rosto Mestre</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Aprenda a gerar personagens ultra-realistas com consistência perfeita de rosto, estilo e personalidade única (E-Girl, Fitness, Lifestyle).
+                    </p>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="glass-panel p-8 rounded-3xl relative transition hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-hot-650/20 border border-hot-500/40 flex items-center justify-center text-hot-400 text-2xl mb-6 shadow-inner">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">2. Produção de Mídia em Massa</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Domina ferramentas de ponta (Stable Diffusion, Midjourney, SeaArt e geradores de vídeo por IA) para criar um banco de conteúdo infinito.
+                    </p>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="glass-panel p-8 rounded-3xl relative transition hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-hot-650/20 border border-hot-500/40 flex items-center justify-center text-hot-400 text-2xl mb-6 shadow-inner">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">3. Funil de Tráfego Viral</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Estratégias avançadas de atração no X (Twitter), TikTok, Instagram e Reddit para direcionar milhares de seguidores qualificados.
+                    </p>
+                </div>
+
+                <!-- Pilar 4 -->
+                <div class="glass-panel p-8 rounded-3xl relative transition hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-hot-650/20 border border-hot-500/40 flex items-center justify-center text-hot-400 text-2xl mb-6 shadow-inner">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">4. Monetização & Chat PPV</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Como estruturar contas em plataformas de assinatura e maximizar lucros através de mensagens privadas automatizadas (PPV).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Lucro / Potencial -->
+    <section id="lucro" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-panel rounded-3xl p-8 lg:p-12 border border-hot-500/30 relative overflow-hidden">
+                <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-hot-650/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-hot-400 font-semibold text-xs tracking-widest uppercase mb-2 block">MERCADO EM EXPANSÃO EXPONENCIAL</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">
+                            Por que este é o mercado mais lucrativo do marketing digital atual?
+                        </h2>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Enquanto criadores tradicionais gastam horas gravando e editando, operações baseadas em IA operam com <strong class="text-white">custo operacional próximo de zero</strong> e capacidade de escala global.
+                        </p>
+                        
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-hot-500 mt-1"></i>
+                                <span><strong>Trabalhe em Segredo:</strong> Total anonimato, sem precisar aparecer para amigos ou família.</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-hot-500 mt-1"></i>
+                                <span><strong>Recebimento em Dólar:</strong> Fature convertendo moças fortes estrangeiras direto para sua conta.</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-hot-500 mt-1"></i>
+                                <span><strong>Escalabilidade Multi-Modelos:</strong> Gerencie 3, 5 ou 10 perfis simultaneamente com automações de IA.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Bloco de Estatísticas -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-darkBg/80 p-6 rounded-2xl border border-hot-500/20 text-center">
+                            <div class="text-3xl lg:text-4xl font-extrabold text-white glow-text mb-1">R$ 5k - 20k</div>
+                            <div class="text-xs text-gray-400">Média de Faturamento Intermediário / Mês</div>
+                        </div>
+                        <div class="bg-darkBg/80 p-6 rounded-2xl border border-hot-500/20 text-center">
+                            <div class="text-3xl lg:text-4xl font-extrabold text-hot-400 glow-text mb-1">15%+</div>
+                            <div class="text-xs text-gray-400">Do faturamento global de plataformas já vem de IA</div>
+                        </div>
+                        <div class="bg-darkBg/80 p-6 rounded-2xl border border-hot-500/20 text-center">
+                            <div class="text-3xl lg:text-4xl font-extrabold text-white glow-text mb-1">24/7</div>
+                            <div class="text-xs text-gray-400">Operação automatizada gerando vendas no piloto automático</div>
+                        </div>
+                        <div class="bg-darkBg/80 p-6 rounded-2xl border border-hot-500/20 text-center">
+                            <div class="text-3xl lg:text-4xl font-extrabold text-pink-400 glow-text mb-1">0%</div>
+                            <div class="text-xs text-gray-400">Necessidade de aparecimento físico ou estúdio</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Depoimentos / Prova Social -->
+    <section id="depoimentos" class="py-24 bg-darkBg/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+                    Resultados Reais de Alunos do <span class="text-hot-500">AI Empire</span>
+                </h2>
+                <p class="text-gray-400">Veja o que quem aplicou o método está faturando em poucos meses de operação.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="glass-panel p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 space-x-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            "Eu não sabia nada de design ou IA avançada. Comecei seguindo o módulo de criação de rosto mestre e em 40 dias já estava faturando meus primeiros 1.500 dólares no Privacy."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 border-t border-gray-800 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-hot-900 flex items-center justify-center font-bold text-white text-sm">RC</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Rodrigo C.</h4>
+                            <p class="text-xs text-gray-400">Aluno há 3 meses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="glass-panel p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 space-x-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            "O tráfego orgânico no X (Twitter) ensinado no treinamento é absurdo. Minha modelo virtual nova bateu 20 mil seguidores em duas semanas com os prompts automatizados."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 border-t border-gray-800 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-hot-900 flex items-center justify-center font-bold text-white text-sm">MS</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Marcos S.</h4>
+                            <p class="text-xs text-gray-400">Aluno há 6 meses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="glass-panel p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 space-x-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            "O chat PPV automatizado mudou meu jogo. Agora o faturamento vem enquanto estou dormindo, respondendo os fãs com scripts validados de inteligência artificial."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 border-t border-gray-800 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-hot-900 flex items-center justify-center font-bold text-white text-sm">AP</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Amanda P.</h4>
+                            <p class="text-xs text-gray-400">Aluna há 4 meses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Oferta / CTA Principal -->
+    <section id="oferta" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-darkBg via-hot-950/20 to-darkBg pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="glass-panel p-8 sm:p-12 rounded-3xl border-2 border-hot-500/50 shadow-2xl text-center relative">
+                
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-hot-650 to-hot-500 text-white font-extrabold text-xs tracking-wider uppercase px-4 py-1.5 rounded-full shadow-lg">
+                    ⚡ Vagas Abertas - Turma Limitada
+                </div>
+
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-6 mt-2">
+                    Pronto para construir seu <span class="text-transparent bg-clip-text bg-gradient-to-r from-hot-500 to-pink-400 glow-text">Império de IA</span>?
+                </h2>
+
+                <p class="text-gray-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto">
+                    Tenha acesso imediato ao treinamento completo, prompts secretos, estratégias de tráfego e suporte VIP.
+                </p>
+
+                <!-- Box de Preço -->
+                <div class="bg-darkBg/90 p-8 rounded-2xl border border-hot-500/30 max-w-lg mx-auto mb-8">
+                    <div class="text-gray-400 text-sm line-through mb-1">De R$ 997,00 por apenas</div>
+                    <div class="text-4xl sm:text-5xl font-extrabold text-white mb-2">
+                        12x de <span class="text-hot-400 glow-text">R$ 49,90</span>
+                    </div>
+                    <div class="text-xs text-emerald-400 font-semibold mb-6">ou R$ 497,00 à vista (Economize 50%)</div>
+
+                    <ul class="text-left space-y-3 text-sm text-gray-300 border-t border-gray-800 pt-6 mb-8">
+                        <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-hot-500"></i> <span>Acesso vitalício ao treinamento completo</span></li>
+                        <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-hot-500"></i> <span>Pack com +500 Prompts validados</span></li>
+                        <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-hot-500"></i> <span>Módulo de automação de Chat PPV</span></li>
+                        <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-hot-500"></i> <span>Grupo VIP de Alunos no Telegram</span></li>
+                    </ul>
+
+                    <a href="#" onclick="alert('Redirecionando para o checkout seguro...'); return false;" class="block w-full bg-gradient-to-r from-hot-650 to-hot-500 hover:from-hot-700 hover:to-hot-650 text-white font-extrabold py-4 px-8 rounded-xl shadow-xl shadow-hot-500/50 transition transform hover:scale-105 text-lg">
+                        GARANTIR MINHA VAGA COM DESCONTO <i class="fa-solid fa-lock ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="flex items-center justify-center space-x-6 text-xs text-gray-400">
+                    <div class="flex items-center space-x-1.5"><i class="fa-solid fa-shield-halved text-hot-500"></i> <span>Garantia de 7 Dias</span></div>
+                    <div class="flex items-center space-x-1.5"><i class="fa-solid fa-bolt text-hot-500"></i> <span>Acesso Imediato por E-mail</span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção FAQ -->
+    <section id="faq" class="py-24 bg-darkBg/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-white mb-4">Perguntas Frequentes</h2>
+                <p class="text-gray-400">Tire suas dúvidas antes de garantir sua vaga.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="glass-panel p-6 rounded-2xl border border-hot-500/20">
+                    <h3 class="font-bold text-white text-base mb-2">Preciso ter conhecimento prévio em programação ou design?</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Não. O treinamento foi feito do zero ao avançado. Mostramos passo a passo como instalar e usar as ferramentas de IA de forma simples, mesmo que você nunca tenha mexido com isso.</p>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border border-hot-500/20">
+                    <h3 class="font-bold text-white text-base mb-2">Preciso aparecer ou mostrar meu rosto?</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Absolutamente não. Todo o projeto opera em cima de modelos virtuais gerados por inteligência artificial. O seu anonimato é 100% garantido.</p>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border border-hot-500/20">
+                    <h3 class="font-bold text-white text-base mb-2">Quanto tempo preciso dedicar por dia?</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Com 1 a 2 horas por dia você consegue configurar suas contas, gerar o conteúdo inicial com IA e programar as postagens e fluxos de tráfego.</p>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border border-hot-500/20">
+                    <h3 class="font-bold text-white text-base mb-2">Como recebo o acesso ao treinamento?</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Assim que o pagamento for aprovado (especialmente via PIX ou cartão), você receberá imediatamente os dados de acesso à nossa plataforma de membros por e-mail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-12 text-center text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-hot-650 to-hot-500 flex items-center justify-center text-white">
+                    <i class="fa-solid fa-fire text-sm"></i>
+                </div>
+                <span class="text-lg font-extrabold text-white">AI <span class="text-hot-500">EMPIRE</span></span>
+            </div>
+            <p class="mb-4">Este produto não garante a obtenção de resultados financeiros. Qualquer referência ao desempenho passado ou potencial não é e não deve ser tomada como uma garantia.</p>
+            <p>&copy; 2026 AI Empire. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
